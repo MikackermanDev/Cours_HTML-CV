@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="source/favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style_v2_old.css" />
+  <title>MikAckerman</title>
+</head>
+
+<body>
+  <div class="bloc">
+    <video src="source/Mountain.mp4" autoplay="autoplay" muted="" loop="true"></video>
+
+    <nav>
+      <a href="#"><img src="source/favicon.ico" alt="" class="logo" /></a>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">PortFolio</a></li>
+      </ul>
+      <img src="source/Menu.png" alt="" class="menu-icone" />
+    </nav>
+
+    <section class="texte">
+      <h1>Je suis <span class="frappe-auto"></span></h1>
+      <p>
+        Il vaut mieux savoir peu de chose sur tout que tout sur une chose.
+        <br />
+        Pensée de Pascal BLAISE<br />
+        <br />
+        Mais si on peut se spécialiser sur tout c'est encore mieux. <br />
+        Pensée de MikAckerman
+      </p>
+      <a href="#">Me contacter</a> <a href="#" class="cv">Mon CV</a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      let typed = new Typed('.frappe-auto', {
+        strings: ['Full-Stack^2000', 'Back-End^2000', 'Front-End^2000'],
+
+        typeSpeed: 50,
+        showCursor: false,
+        loop: true,
+        fadeOut: true,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 1000,
+      });
+    </script>
+  </div>
+</body>
+
+</html>
