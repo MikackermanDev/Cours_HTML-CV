@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-family: "SfDistantGalaxyOutlineItalic-4yA4";
+	src: url("src/font/SfDistantGalaxyOutlineItalic-4yA4.ttf") format("truetype");
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	height: 100%;
+	background-color: orange;
+	/* nous ne devons plus voir de Orange */
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
+
+.content {
+	background-color: aqua;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+}
+.content h2 {
+	padding: 50px;
+	font-family: SfDistantGalaxyOutlineItalic-4yA4;
+	border: solid 2px green;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+footer {
+	background-color: grey;
+	text-align: center;
+	padding: 10px;
+	height: 40px;
+}
