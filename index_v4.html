@@ -6,19 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style_v4.css">
-  <title>Erreur 404</title>
+  <title>Navbar Burger</title>
 </head>
 
 <body>
 
-  <div class="content">
-    <h2>la galaxy 404 n'a pas été trouvé :( </h2>
-  </div>
+  <nav class="navbar">
+    <a href="#" class="logo">ADVENTURE</a>
+    <div class="nav-links">
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Adventure</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Infos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <img src="src/img/Menu.png" alt="MenuBurger" class="menu-burger">
+  </nav>
 
-  <footer>
-    <small>@2023 MikackermanDev, Font used is freeware
-    </small>
-  </footer>
+  <script>
+    const menuBurger = document.querySelector(".menu-burger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuBurger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu")
+    })
+  </script>
+
+  <header>
+  </header>
 </body>
 
 </html>
